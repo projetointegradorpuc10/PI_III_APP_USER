@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_app">
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_logo" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="E-mail"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etConfirmarSenha"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSenha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etConfirmarSenha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Cadastrar"
+            android:backgroundTint="#78D5F9"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+</LinearLayout>
