@@ -1,12 +1,10 @@
-package com.example.myapplication
+package com.riskguard.appuser
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.FirebaseApp
-import com.google.firebase.firestore.FirebaseFirestore
 
 class CadastroActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -16,6 +14,7 @@ class CadastroActivity : AppCompatActivity() {
     private lateinit var btnCadastrar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
 

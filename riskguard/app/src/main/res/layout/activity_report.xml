@@ -11,7 +11,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg_app">
 
-
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="100dp"
@@ -29,8 +28,6 @@
             android:src="@drawable/ic_logo" />
 
 
-
-        <!-- CAMPO TÍTULO -->
         <EditText
             android:id="@+id/etTitulo"
             android:layout_width="300dp"
@@ -38,12 +35,14 @@
             android:layout_below="@id/logo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
             android:hint="Título do Report"
             android:minHeight="48dp"
             android:padding="10dp" />
 
-        <!-- CAMPO DESCRIÇÃO -->
+
         <EditText
             android:id="@+id/etDescricao"
             android:layout_width="300dp"
@@ -51,13 +50,15 @@
             android:layout_below="@id/etTitulo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
             android:hint="Descrição"
             android:gravity="top|start"
             android:inputType="textMultiLine"
             android:padding="10dp" />
 
-        <!-- BOTÃO ANEXO -->
+
         <Button
             android:id="@+id/btnAnexo"
             android:layout_width="wrap_content"
@@ -65,11 +66,12 @@
             android:layout_below="@id/etDescricao"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black"
             android:text="Anexar Arquivo"
-            android:backgroundTint="#CCCCCC"
-            android:textColor="#000000" />
+            android:backgroundTint="#CCCCCC" />
 
-        <!-- RADIOGROUP - TIPO DE RISCO -->
+
         <RadioGroup
             android:id="@+id/rgRisco"
             android:layout_width="wrap_content"
@@ -84,6 +86,7 @@
                 android:id="@+id/rbBaixo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="Baixo"
                  />
 
@@ -91,6 +94,7 @@
                 android:id="@+id/rbModerado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="Moderado"
               />
 
@@ -98,12 +102,12 @@
                 android:id="@+id/rbAlto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="Alto"
               />
         </RadioGroup>
 
 
-        <!-- BOTÃO ENVIAR REPORT -->
         <Button
             android:id="@+id/btnEnviarReport"
             android:layout_width="wrap_content"
@@ -111,6 +115,7 @@
             android:layout_below="@id/rgRisco"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+
             android:text="Enviar Report"
             android:backgroundTint="#78D5F9"
             android:textColor="#FFFFFF" />

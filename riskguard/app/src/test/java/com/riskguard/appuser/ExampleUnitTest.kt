@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.riskguard.appuser
 
 import org.junit.Test
 

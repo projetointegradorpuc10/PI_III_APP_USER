@@ -1,15 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permissões para Android 13 (API 33) -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -21,9 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
-        <!-- Tela principal -->
+
         <activity
-            android:name="com.example.myapplication.MainActivity"
+            android:name="com.riskguard.appuser.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MyApplication">
             <intent-filter>
@@ -32,14 +30,14 @@
             </intent-filter>
         </activity>
 
-        <!-- Tela de cadastro -->
+
         <activity
-            android:name="com.example.myapplication.CadastroActivity"
+            android:name="com.riskguard.appuser.CadastroActivity"
             android:exported="true" />
 
-        <!-- Tela de envio de report -->
+
         <activity
-            android:name="com.example.myapplication.ReportActivity"
+            android:name="com.riskguard.appuser.ReportActivity"
             android:exported="true" />
     </application>
 

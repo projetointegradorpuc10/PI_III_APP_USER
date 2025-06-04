@@ -7,9 +7,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:171808856471:android:8e44fc12d8dc3f5c748cd2",
+        "mobilesdk_app_id": "1:171808856471:android:74dfeadb6c0a1f13748cd2",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.riskguard.appadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIbNozUJnSWjiz0e10gmKPyhL9Py4HoNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171808856471:android:4ff820f5213f109d748cd2",
+        "android_client_info": {
+          "package_name": "com.riskguard.appuser"
         }
       },
       "oauth_client": [],

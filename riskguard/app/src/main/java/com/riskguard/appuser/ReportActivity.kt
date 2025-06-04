@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.riskguard.appuser
 
 import android.Manifest
 import android.content.Intent
